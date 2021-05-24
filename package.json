@@ -73,6 +73,7 @@
     "build/module",
     "locales",
     "!**/*.spec.*",
+    "!**/__tests__",
     "!**/*.json",
     "CHANGELOG.md",
     "LICENSE",
