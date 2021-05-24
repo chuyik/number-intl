@@ -14,9 +14,9 @@ yarn add number-intl
 import { setLocale, format } from 'number-intl';
 
 // import locale data on demand
-import 'number-intl/locales/en';
-import 'number-intl/locales/zh-Hans';
-import 'number-intl/locales/id';
+import 'number-intl/locales/module/en';
+import 'number-intl/locales/module/zh-Hans';
+import 'number-intl/locales/module/id';
 
 // set current locale to indonesian
 setLocale('id');

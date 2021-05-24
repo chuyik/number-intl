@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { addLocaleData, format, setLocale } from '../index';
 
-addLocaleData(require('../../locales/en.json'));
-addLocaleData(require('../../locales/zh-Hans.json'));
-addLocaleData(require('../../locales/id.json'));
+addLocaleData(require('../../locales/json/en.json'));
+addLocaleData(require('../../locales/json/zh-Hans.json'));
+addLocaleData(require('../../locales/json/id.json'));
 
 describe('en', () => {
   beforeEach(() => {
