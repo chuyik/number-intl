@@ -19,6 +19,7 @@
       "error",
       { "ignoreDeclarationSort": true, "ignoreCase": true }
     ],
+    "prefer-const": ["error", { "destructuring": "all" }],
     "no-prototype-builtins": "off"
   },
   "overrides": [
