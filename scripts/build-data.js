@@ -44,6 +44,16 @@ Object.keys(locData).forEach((locale) => {
     path.join(LOCALE_DIR, locale + '.json'),
     locStringData[locale]
   );
+
+  const { name } = require('../package.json');
+  fs.writeFileSync(
+    path.join(LOCALE_DIR, locale + '.js'),
+    `!(function (e, a) {
+    module.exports = a(require('${name}/lib/locale'))
+  })(this, function (e) {
+    return e.addLocaleData(${locStringData[locale]});
+  });`
+  );
 });
 
 console.log('Total number of locales is ' + Object.keys(locData).length);

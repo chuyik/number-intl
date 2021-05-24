@@ -6,16 +6,16 @@
         ],
         "patterns": {
             "decimal": {
-                "positivePattern": "{number}",
-                "negativePattern": "{minusSign}{number}"
+                "pos": "{number}",
+                "ne": "{minus}{number}"
             },
             "currency": {
-                "positivePattern": "{currency}{number}",
-                "negativePattern": "{minusSign}{currency}{number}"
+                "pos": "{currency}{number}",
+                "ne": "{minus}{currency}{number}"
             },
             "percent": {
-                "positivePattern": "{percentSign}{number}",
-                "negativePattern": "{minusSign}{percentSign}{number}"
+                "pos": "{percent}{number}",
+                "ne": "{minus}{percent}{number}"
             }
         },
         "symbols": {
@@ -23,9 +23,9 @@
                 "decimal": ",",
                 "group": ".",
                 "nan": "NaN",
-                "plusSign": "+",
-                "minusSign": "-",
-                "percentSign": "%",
+                "plus": "+",
+                "minus": "-",
+                "percent": "%",
                 "infinity": "∞"
             }
         },

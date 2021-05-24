@@ -4,9 +4,9 @@ function replaceSpecialChars(ptn) {
 
   return ptn
     .replace(numPtn, '{number}')
-    .replace('+', '{plusSign}')
-    .replace('-', '{minusSign}')
-    .replace('%', '{percentSign}')
+    .replace('+', '{plus}')
+    .replace('-', '{minus}')
+    .replace('%', '{percent}')
     .replace('¤', '{currency}');
 }
 
@@ -17,13 +17,11 @@ function replaceSpecialChars(ptn) {
 function createNumberFormats(ptn) {
   let patterns = ptn.split(';'),
     ret = {
-      positivePattern: replaceSpecialChars(patterns[0]),
+      pos: replaceSpecialChars(patterns[0]),
     };
 
   // Negative patterns aren't always specified, in those cases use '-' + positivePattern
-  ret.negativePattern = patterns[1]
-    ? replaceSpecialChars(patterns[1])
-    : '{minusSign}' + ret.positivePattern;
+  ret.ne = patterns[1] ? replaceSpecialChars(patterns[1]) : '{minus}' + ret.pos;
 
   return ret;
 }
@@ -150,9 +148,9 @@ module.exports = function reduceCLDR(locale, data) {
         decimal: sym.decimal,
         group: sym.group,
         nan: sym.nan,
-        plusSign: sym.plusSign,
-        minusSign: sym.minusSign,
-        percentSign: sym.percentSign,
+        plus: sym.plusSign,
+        minus: sym.minusSign,
+        percent: sym.percentSign,
         infinity: sym.infinity,
       };
     });
