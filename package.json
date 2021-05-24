@@ -34,7 +34,7 @@
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
     "prepare-release": "run-s test doc:html version doc:publish",
-    "release": "git push --follow-tags origin master && npm publish"
+    "release": "git push --follow-tags origin master && npm publish --regsitry=https://registry.npmjs.org"
   },
   "engines": {
     "node": ">=10"
