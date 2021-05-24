@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/chuyik/number-intl/compare/v1.1.3...v1.1.4) (2021-05-24)
+
+
+### Bug Fixes
+
+* wrong path in locales ([5c4b371](https://github.com/chuyik/number-intl/commit/5c4b3712b0d00262ee878f741f699cdd643c0c64))
+
 ### [1.1.3](https://github.com/chuyik/number-intl/compare/v1.1.2...v1.1.3) (2021-05-24)
 
 ### [1.1.2](https://github.com/chuyik/number-intl/compare/v1.1.1...v1.1.2) (2021-05-24)
