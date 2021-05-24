@@ -1,0 +1,51 @@
+{
+    "locale": "lo-LA",
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{currency}{number}",
+                "negativePattern": "{currency}{minusSign}{number}"
+            },
+            "percent": {
+                "positivePattern": "{number}{percentSign}",
+                "negativePattern": "{minusSign}{number}{percentSign}"
+            }
+        },
+        "symbols": {
+            "laoo": {
+                "decimal": ",",
+                "group": ".",
+                "nan": "ບໍ່​ແມ່ນ​ໂຕ​ເລກ",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            },
+            "latn": {
+                "decimal": ",",
+                "group": ".",
+                "nan": "ບໍ່​ແມ່ນ​ໂຕ​ເລກ",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "CNY": "CN¥",
+            "EUR": "€",
+            "HKD": "HK$",
+            "THB": "฿",
+            "TWD": "NT$",
+            "USD": "US$",
+            "VND": "₫"
+        }
+    }
+}

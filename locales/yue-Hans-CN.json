@@ -1,0 +1,41 @@
+{
+    "locale": "yue-Hans-CN",
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{currency}{number}",
+                "negativePattern": "{minusSign}{currency}{number}"
+            },
+            "percent": {
+                "positivePattern": "{number}{percentSign}",
+                "negativePattern": "{minusSign}{number}{percentSign}"
+            }
+        },
+        "symbols": {
+            "latn": {
+                "decimal": ".",
+                "group": ",",
+                "nan": "非数值",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "CNY": "￥",
+            "EUR": "€",
+            "HKD": "HK$",
+            "TWD": "NT$",
+            "USD": "US$",
+            "VND": "₫"
+        }
+    }
+}

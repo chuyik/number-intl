@@ -1,0 +1,38 @@
+{
+    "locale": "ka",
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{number} {currency}",
+                "negativePattern": "{minusSign}{number} {currency}"
+            },
+            "percent": {
+                "positivePattern": "{number}{percentSign}",
+                "negativePattern": "{minusSign}{number}{percentSign}"
+            }
+        },
+        "symbols": {
+            "latn": {
+                "decimal": ",",
+                "group": " ",
+                "nan": "არ არის რიცხვი",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "EUR": "€",
+            "TWD": "NT$",
+            "USD": "US$"
+        }
+    }
+}

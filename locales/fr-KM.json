@@ -1,0 +1,39 @@
+{
+    "locale": "fr-KM",
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{number} {currency}",
+                "negativePattern": "{minusSign}{number} {currency}"
+            },
+            "percent": {
+                "positivePattern": "{number} {percentSign}",
+                "negativePattern": "{minusSign}{number} {percentSign}"
+            }
+        },
+        "symbols": {
+            "latn": {
+                "decimal": ",",
+                "group": " ",
+                "nan": "NaN",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "EUR": "€",
+            "SGD": "$SG",
+            "USD": "$US",
+            "VND": "₫"
+        }
+    }
+}

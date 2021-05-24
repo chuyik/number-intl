@@ -1,0 +1,36 @@
+{
+    "locale": "es-EC",
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{currency}{number}",
+                "negativePattern": "{currency}{minusSign}{number}"
+            },
+            "percent": {
+                "positivePattern": "{number} {percentSign}",
+                "negativePattern": "{minusSign}{number} {percentSign}"
+            }
+        },
+        "symbols": {
+            "latn": {
+                "decimal": ",",
+                "group": ".",
+                "nan": "NaN",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "USD": "$"
+        }
+    }
+}

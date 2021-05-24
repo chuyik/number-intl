@@ -1,0 +1,52 @@
+{
+    "locale": "ar-OM",
+    "number": {
+        "nu": [
+            "arab",
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{number} {currency}",
+                "negativePattern": "{minusSign}{number} {currency}"
+            },
+            "percent": {
+                "positivePattern": "{number}{percentSign}",
+                "negativePattern": "{minusSign}{number}{percentSign}"
+            }
+        },
+        "symbols": {
+            "arab": {
+                "decimal": "٫",
+                "group": "٬",
+                "nan": "ليس رقم",
+                "plusSign": "؜+",
+                "minusSign": "؜-",
+                "percentSign": "٪؜",
+                "infinity": "∞"
+            },
+            "latn": {
+                "decimal": ".",
+                "group": ",",
+                "nan": "ليس رقمًا",
+                "plusSign": "‎+",
+                "minusSign": "‎-",
+                "percentSign": "‎%‎",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "CNY": "CN¥",
+            "EUR": "€",
+            "HKD": "HK$",
+            "THB": "฿",
+            "TWD": "NT$",
+            "USD": "US$",
+            "VND": "₫"
+        }
+    }
+}
