@@ -67,6 +67,24 @@
 				</a>
 				<pre><code class="language-bash"><span style="color: #000000">yarn add number-intl</span>
 </code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">setLocale</span><span style="color: #000000">, </span><span style="color: #001080">format</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;number-intl&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// import locale data on demand</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;number-intl/locales/en&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;number-intl/locales/zh-Hans&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;number-intl/locales/id&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// set current locale to indonesian</span>
+<span style="color: #795E26">setLocale</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;id&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #008000">// format number like to string</span>
+<span style="color: #795E26">format</span><span style="color: #000000">(</span><span style="color: #098658">3.14</span><span style="color: #000000">); </span><span style="color: #008000">// --&gt; 3,14</span>
+<span style="color: #795E26">format</span><span style="color: #000000">(</span><span style="color: #098658">3.14</span><span style="color: #000000">, { </span><span style="color: #001080">style:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;currency&#039;</span><span style="color: #000000">, </span><span style="color: #001080">currency:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;CNY&#039;</span><span style="color: #000000"> }); </span><span style="color: #008000">// --&gt; CN¥3,14</span>
+<span style="color: #795E26">format</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;31415926.31415926&#039;</span><span style="color: #000000">, { </span><span style="color: #001080">useGrouping:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> }); </span><span style="color: #008000">// --&gt; 31.415.926,31415926</span>
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
