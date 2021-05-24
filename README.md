@@ -1,6 +1,6 @@
 # number-intl
 
-Tiny number formatter like numeral and numbro, with Intl support and tree-shaking ready.
+Tiny number formatter with Intl support, tailored CLDR data and tree-shaking ready.
 
 ## Install
 
