@@ -1,5 +1,5 @@
 !(function (e, a) {
-    module.exports = a(require('number-intl/lib/locale'))
+    module.exports = a(require('number-intl/build/main/lib/locale'))
   })(this, function (e) {
     return e.addLocaleData({
     "locale": "it-SM",

@@ -49,7 +49,7 @@ Object.keys(locData).forEach((locale) => {
   fs.writeFileSync(
     path.join(LOCALE_DIR, locale + '.js'),
     `!(function (e, a) {
-    module.exports = a(require('${name}/lib/locale'))
+    module.exports = a(require('${name}/build/main/lib/locale'))
   })(this, function (e) {
     return e.addLocaleData(${locStringData[locale]});
   });`
