@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/chuyik/number-intl/compare/v1.1.5...v1.2.0) (2021-05-28)
+
+
+### Features
+
+* support narrow symbol and IDR currency ([e5d721b](https://github.com/chuyik/number-intl/commit/e5d721b638a753a8d2c37557fc7dccf87ea12cb2))
+
 ### [1.1.5](https://github.com/chuyik/number-intl/compare/v1.1.4...v1.1.5) (2021-05-24)
 
 ### [1.1.4](https://github.com/chuyik/number-intl/compare/v1.1.3...v1.1.4) (2021-05-24)
