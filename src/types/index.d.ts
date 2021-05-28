@@ -27,6 +27,12 @@ interface LOCALE_DATA {
         infinity: string;
       };
     };
-    currencies: Record<string, string>;
+    currencies: Record<
+      string,
+      {
+        symbol?: string;
+        narrow?: string;
+      }
+    >;
   };
 }

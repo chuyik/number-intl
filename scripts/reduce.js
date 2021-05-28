@@ -70,7 +70,7 @@ module.exports = function reduceCLDR(locale, data) {
   // }
 
   // 只保留热门货币
-  for (let key in data.numbers.currencies) {
+  for (const key in data.numbers.currencies) {
     if (
       ![
         'USD',
@@ -83,6 +83,7 @@ module.exports = function reduceCLDR(locale, data) {
         'MYR',
         'PHP',
         'SGD',
+        'IDR',
       ].includes(key)
     ) {
       delete data.numbers.currencies[key];
@@ -192,8 +193,16 @@ module.exports = function reduceCLDR(locale, data) {
 
   // Copy the currency symbols
   gopn(data.numbers.currencies).forEach((k) => {
-    if (k !== data.numbers.currencies[k].symbol)
-      ret.number.currencies[k] = data.numbers.currencies[k].symbol;
+    const cur = data.numbers.currencies[k];
+    const narrow = cur['symbol-alt-narrow'];
+    const res = {};
+    if (narrow) {
+      res.narrow = narrow;
+    }
+    if (cur.symbol !== k) {
+      res.symbol = cur.symbol;
+    }
+    ret.number.currencies[k] = res;
   });
 
   // Copy the formatting information

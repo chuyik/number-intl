@@ -8,11 +8,18 @@ export interface FormatOptions {
   nu?: 'latn';
   currency?: string;
   useGrouping?: boolean;
+  currencyDisplay?: 'symbol' | 'narrowSymbol';
 }
 
 export function format(
   number: number | string,
-  { style = 'decimal', nu = 'latn', currency, useGrouping }: FormatOptions = {}
+  {
+    style = 'decimal',
+    nu = 'latn',
+    currency,
+    useGrouping,
+    currencyDisplay = 'narrowSymbol',
+  }: FormatOptions = {}
 ): string {
   const num = parseNumber(number);
   const localeData = getLocaleData();
@@ -30,12 +37,25 @@ export function format(
     integer = integer.replace(K_SEP_REGEX, symbol.group);
   }
 
+  if (currency) {
+    const currencyData = currencies[currency];
+    if (currencyData) {
+      switch (currencyDisplay) {
+        case 'symbol':
+          currency = currencyData.symbol || currency;
+          break;
+        case 'narrowSymbol':
+          currency = currencyData.narrow;
+          break;
+        default:
+          break;
+      }
+    }
+  }
+
   return pat
     .replace('{number}', `${integer}${symbol.decimal}${decimal}`)
     .replace('{minus}', symbol.minus)
     .replace('{percent}', symbol.percent)
-    .replace(
-      '{currency}',
-      (currency && currencies[currency]) || currency || ''
-    );
+    .replace('{currency}', currency || '');
 }

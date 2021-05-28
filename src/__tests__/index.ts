@@ -19,12 +19,34 @@ describe('en', () => {
     );
   });
   test('currency', () => {
-    expect(format('3.14', { style: 'currency', currency: 'CNY' })).toBe(
-      'CN¥3.14'
-    );
-    expect(format('-3.14', { style: 'currency', currency: 'CNY' })).toBe(
-      '-CN¥3.14'
-    );
+    expect(
+      format('3.14', {
+        style: 'currency',
+        currency: 'CNY',
+        currencyDisplay: 'symbol',
+      })
+    ).toBe('CN¥3.14');
+    expect(
+      format('-3.14', {
+        style: 'currency',
+        currency: 'CNY',
+        currencyDisplay: 'symbol',
+      })
+    ).toBe('-CN¥3.14');
+    expect(
+      format('3.14', {
+        style: 'currency',
+        currency: 'CNY',
+        currencyDisplay: 'narrowSymbol',
+      })
+    ).toBe('¥3.14');
+    expect(
+      format('-3.14', {
+        style: 'currency',
+        currency: 'CNY',
+        currencyDisplay: 'narrowSymbol',
+      })
+    ).toBe('-¥3.14');
   });
   test('percent', () => {
     expect(format('3.14', { style: 'percent' })).toBe('3.14%');
@@ -71,12 +93,34 @@ describe('id', () => {
     );
   });
   test('currency', () => {
-    expect(format('3.14', { style: 'currency', currency: 'CNY' })).toBe(
-      'CN¥3,14'
-    );
-    expect(format('-3.14', { style: 'currency', currency: 'CNY' })).toBe(
-      '-CN¥3,14'
-    );
+    expect(
+      format('3.14', {
+        style: 'currency',
+        currency: 'IDR',
+        currencyDisplay: 'symbol',
+      })
+    ).toBe('Rp3,14');
+    expect(
+      format('-3.14', {
+        style: 'currency',
+        currency: 'IDR',
+        currencyDisplay: 'symbol',
+      })
+    ).toBe('-Rp3,14');
+    expect(
+      format('3.14', {
+        style: 'currency',
+        currency: 'IDR',
+        currencyDisplay: 'narrowSymbol',
+      })
+    ).toBe('Rp3,14');
+    expect(
+      format('-3.14', {
+        style: 'currency',
+        currency: 'IDR',
+        currencyDisplay: 'narrowSymbol',
+      })
+    ).toBe('-Rp3,14');
   });
   test('percent', () => {
     expect(format('3.14', { style: 'percent' })).toBe('3,14%');
