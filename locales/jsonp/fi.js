@@ -33,8 +33,41 @@
             }
         },
         "currencies": {
-            "EUR": "€",
-            "USD": "$"
+            "CNY": {
+                "narrow": "CNY"
+            },
+            "EUR": {
+                "narrow": "€",
+                "symbol": "€"
+            },
+            "HKD": {
+                "narrow": "HKD"
+            },
+            "IDR": {
+                "narrow": "IDR"
+            },
+            "MYR": {
+                "narrow": "MYR"
+            },
+            "PHP": {
+                "narrow": "PHP"
+            },
+            "SGD": {
+                "narrow": "SGD"
+            },
+            "THB": {
+                "narrow": "THB"
+            },
+            "TWD": {
+                "narrow": "TWD"
+            },
+            "USD": {
+                "narrow": "$",
+                "symbol": "$"
+            },
+            "VND": {
+                "narrow": "VND"
+            }
         }
     }
 });

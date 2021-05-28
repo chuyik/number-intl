@@ -31,8 +31,41 @@ addLocaleData({
             }
         },
         "currencies": {
-            "EUR": "€",
-            "USD": "щ.д."
+            "CNY": {
+                "narrow": "CNY"
+            },
+            "EUR": {
+                "narrow": "€",
+                "symbol": "€"
+            },
+            "HKD": {
+                "narrow": "HKD"
+            },
+            "IDR": {
+                "narrow": "Rp"
+            },
+            "MYR": {
+                "narrow": "RM"
+            },
+            "PHP": {
+                "narrow": "PHP"
+            },
+            "SGD": {
+                "narrow": "SGD"
+            },
+            "THB": {
+                "narrow": "฿"
+            },
+            "TWD": {
+                "narrow": "TWD"
+            },
+            "USD": {
+                "narrow": "$",
+                "symbol": "щ.д."
+            },
+            "VND": {
+                "narrow": "VND"
+            }
         }
     }
 });

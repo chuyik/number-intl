@@ -33,11 +33,44 @@
             }
         },
         "currencies": {
-            "CNY": "CN¥",
-            "HKD": "HK$",
-            "TWD": "NT$",
-            "USD": "US$",
-            "VND": "₫"
+            "CNY": {
+                "narrow": "¥",
+                "symbol": "CN¥"
+            },
+            "EUR": {
+                "narrow": "€"
+            },
+            "HKD": {
+                "narrow": "$",
+                "symbol": "HK$"
+            },
+            "IDR": {
+                "narrow": "Rp"
+            },
+            "MYR": {
+                "narrow": "RM"
+            },
+            "PHP": {
+                "narrow": "₱"
+            },
+            "SGD": {
+                "narrow": "$"
+            },
+            "THB": {
+                "narrow": "฿"
+            },
+            "TWD": {
+                "narrow": "$",
+                "symbol": "NT$"
+            },
+            "USD": {
+                "narrow": "$",
+                "symbol": "US$"
+            },
+            "VND": {
+                "narrow": "₫",
+                "symbol": "₫"
+            }
         }
     }
 });
