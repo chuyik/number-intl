@@ -1,6 +1,6 @@
 {
   "name": "number-intl",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tiny number formatter with Intl support, tailored CLDR data and tree-shaking ready.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
