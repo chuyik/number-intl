@@ -15,6 +15,7 @@ export function getLocaleData(key = locale): LOCALE_DATA {
 }
 
 export function setLocale(key: string): void {
+  if (key === locale) return;
   if (getLocaleData(key)) {
     locale = key;
   }
